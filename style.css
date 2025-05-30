@@ -1,0 +1,187 @@
+/* Custom styles for demonstration, complementing Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #334155; /* Dark slate text */
+}
+
+/* Header styling */
+header {
+    background-color: #1e3a8a; /* Dark blue */
+    color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Desktop: horizontal navigation */
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #93c5fd; /* Light blue on hover */
+}
+
+/* Main content section */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero-section {
+    background-color: #60a5fa; /* Medium blue */
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 0.75rem; /* Rounded corners */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.content-grid {
+    display: flex; /* Desktop: two columns */
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.column h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+}
+
+.column p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.column img {
+    max-width: 100%; /* Ensure images scale within their containers */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1e3a8a; /* Dark blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-radius: 0.75rem 0.75rem 0 0; /* Rounded top corners */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust layout for screens up to 768px wide (tablets and smaller) */
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 0 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Add vertical spacing */
+    }
+
+    .hero-section {
+        padding: 2rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .hero-section h1 {
+        font-size: 2rem; /* Reduce font size for hero heading */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Reduce font size for hero paragraph */
+    }
+
+    .content-grid {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column {
+        padding: 1rem; /* Reduce padding in columns */
+    }
+
+    .column h2 {
+        font-size: 1.5rem; /* Reduce font size for column headings */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small mobile screens */
+    header {
+        padding: 0.75rem 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Slightly smaller nav links */
+    }
+
+    .container {
+        margin: 1rem auto;
+    }
+
+    .hero-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .column {
+        padding: 0.75rem;
+    }
+
+    .column h2 {
+        font-size: 1.25rem;
+    }
+
+    .column p {
+        font-size: 0.9rem;
+    }
+}
